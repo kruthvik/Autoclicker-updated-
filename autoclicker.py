@@ -5,13 +5,6 @@ import threading
 import json
 
 
-def callback(self, P):
-    if str.isdigit(P) or P == "":
-        return True
-    else:
-        return False
-
-
 with open('settings.json') as f:
     data = json.load(f)
 
